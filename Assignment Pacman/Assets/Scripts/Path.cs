@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-	public static Vector3[] myPath;
+	public static Vector3[] myPathPoint;
 	public static GameObject[] Checkpoints;
 	public GameObject Goal;
 
-
+	public Vector3[] myPathPoints
+	{
+		get
+		{
+			return myPathPoint;
+		}
+	}
 
     // Start is called before the first frame update
     void Start()
